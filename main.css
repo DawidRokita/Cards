@@ -28,11 +28,33 @@ body{
     transition: 1s;
 }
 
+.container2{
+    width: 350px;
+    height: 550px;
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    'a a'
+    'k k';
+    transition: 1s;
+}
+
+.item9{
+    display: none;
+    grid-area: k;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .item1{
     grid-area: a;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
 }
 
 .item2{
@@ -113,8 +135,10 @@ a{
 }
 
 #icon{
-    font-size: 50px;
-    padding: 60px 65px;
+    /* font-size: 50px; */
+    /* padding: 60px 65px; */
+    width: 150px;
+    height: 150px;
     background: rgb(223, 198, 59);
     border-radius: 160px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
@@ -122,12 +146,14 @@ a{
 }
 
 #icon2{
-    font-size: 50px;
-    padding: 60px 65px;
+    /* font-size: 50px; */
+    /* padding: 60px 65px; */
+    width: 150px;
+    height: 150px;
     background: rgb(223, 198, 59);
     border-radius: 160px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
-    transform: translateX(190px) translateY(-90px) scale(0.5);
+    transform: translateX(170px) translateY(-90px) scale(0.5);
     transition: 1s;
 }
 
@@ -135,4 +161,10 @@ a:hover{
     color: rgba(0, 0, 0, 0.753);
 }
 
+.i{
+    display: flex;
+}
 
+.profile{
+    display: none;
+}
