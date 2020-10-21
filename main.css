@@ -119,6 +119,25 @@ a{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
 }
 
+#icon2{
+    font-size: 50px;
+    padding: 60px 65px;
+    background: rgb(223, 198, 59);
+    border-radius: 160px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
+    animation: animacja 2s normal forwards ease-in-out;
+}
+
 a:hover{    
     color: rgba(0, 0, 0, 0.753);
 }
+
+@keyframes animacja{
+    0%{
+       transform: translateX(0px) translateY(0px);
+    }
+    100%{
+       transform: translateX(190px) translateY(-90px) scale(0.5); 
+    }
+}
+
