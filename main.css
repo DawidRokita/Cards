@@ -46,7 +46,9 @@ body{
     display: none;
     grid-area: k;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-200px)
 }
 
 .item1{
@@ -117,16 +119,20 @@ body{
     align-items: center;
 }
 
-ul{
+.ul1{
     display: flex;
     list-style: none;
     margin-right: 40px;
 }
 
-li{
+.li1{
     padding: 10px 10px;
     margin: 10px;
     font-size: 30px;
+}
+
+.ul2{
+    margin-right: 30px;
 }
 
 a{
@@ -167,4 +173,9 @@ a:hover{
 
 .profile{
     display: none;
+}
+
+.programing{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
