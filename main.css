@@ -12,9 +12,9 @@ body{
 }
 
 .container{
-    width: 40vh;
-    height: 60vh;
-    background: rgb(223, 198, 59);
+    width: 350px;
+    height: 550px;
+    background: #DFC63B;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,6 +25,7 @@ body{
     'c d'
     'e f'
     'g h';
+    transition: 1s;
 }
 
 .item1{
@@ -117,6 +118,7 @@ a{
     background: rgb(223, 198, 59);
     border-radius: 160px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
+    transition: 1s;
 }
 
 #icon2{
@@ -125,19 +127,12 @@ a{
     background: rgb(223, 198, 59);
     border-radius: 160px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
-    animation: animacja 2s normal forwards ease-in-out;
+    transform: translateX(190px) translateY(-90px) scale(0.5);
+    transition: 1s;
 }
 
 a:hover{    
     color: rgba(0, 0, 0, 0.753);
 }
 
-@keyframes animacja{
-    0%{
-       transform: translateX(0px) translateY(0px);
-    }
-    100%{
-       transform: translateX(190px) translateY(-90px) scale(0.5); 
-    }
-}
 
