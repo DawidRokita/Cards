@@ -15,27 +15,89 @@ body{
     width: 40vh;
     height: 60vh;
     background: rgb(223, 198, 59);
-    border-radius: 20px;
-    position: absolute;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'a a'
+    'b b'
+    'c d'
+    'e f'
+    'g h';
+}
+
+.item1{
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item2{
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.item3{
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item4{
+    grid-area: d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item5{
+    grid-area: e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item6{
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item7{
+    grid-area: g;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item8{
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .photocircle{
-    position: relative;
-    left: 10vh;
-    top: 2vh;
     width: 180px;
     height: 180px;
     border-radius: 100px;
-    background: rgb(223, 198, 59);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul{
     display: flex;
     list-style: none;
-    position: relative;
-    top: 4vh;
-    left: 10px;
+    margin-right: 40px;
 }
 
 li{
@@ -46,6 +108,17 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(71, 71, 71);
 }
 
+#icon{
+    font-size: 50px;
+    padding: 60px 65px;
+    background: rgb(223, 198, 59);
+    border-radius: 160px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.411);
+}
+
+a:hover{    
+    color: rgba(0, 0, 0, 0.753);
+}
