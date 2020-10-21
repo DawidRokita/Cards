@@ -4,5 +4,10 @@ const photocircle = document.querySelector(".photocircle");
 
 icon.addEventListener('click', function(){
     container.style.background = "white";
-    photocircle.className = "photocircle2";
+    if(icon.id === "icon"){
+        icon.id = "icon2";
+    }else{
+        icon.id = "icon";
+    }
+    
 })
